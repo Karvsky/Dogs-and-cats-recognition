@@ -37,7 +37,7 @@ def data_import():
                 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
             if image is not None:
-                new_image = cv2.resize(image, (70, 50))
+                new_image = cv2.resize(image, (120,120))
                 img_array.append(new_image)
                 if i == 'Cat':
                     img_labels.append(0)
